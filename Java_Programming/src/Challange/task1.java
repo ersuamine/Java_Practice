@@ -1,7 +1,7 @@
 package Challange;
 
 import java.util.Scanner;
-
+//game from Metehan Ates
 public class task1 {
 
     // Function that implements the
