@@ -1,8 +1,8 @@
-package Challange;
+package Test;
 
 import java.util.Scanner;
 //game from Metehan Ates
-public class task1 {
+public class NumberGuessingGame {
 
     // Function that implements the
     // number guessing game
@@ -68,11 +68,11 @@ public class task1 {
     }
 
     // Driver Code
-    public static void
-    main(String arg[])
+
+    public static void main(String[] args) {
     {
 
         // Function Call
         guessingNumberGame();
     }
-}
+}}
