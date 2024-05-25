@@ -23,12 +23,11 @@ public class BubbleSort {
         }
         System.out.println(Arrays.toString(numbers));
 
-        //sorting using the method from web
+        //sorting using the method bubbleSort
         int[] numbers2 = {9, 8, 4, 0, 1, 3, 2, 5, 6, 10, 7};
         System.out.println(Arrays.toString(numbers2));
         bubbleSort(numbers2,numbers2.length);
         System.out.println(Arrays.toString(numbers2));
-
     }
 
     // An optimized version of Bubble Sort
@@ -54,7 +53,6 @@ public class BubbleSort {
             if (swapped == false)
                 break;
         }
-
 
     }
 
