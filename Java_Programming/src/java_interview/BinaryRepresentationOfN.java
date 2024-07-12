@@ -30,7 +30,7 @@ import java.util.List;
 public class BinaryRepresentationOfN {
     public static void main(String[] args) {
 
-        System.out.println(binaryOne(15));
+        System.out.println(binaryOne(16));
     }
 
     public static int binaryOne(int number) {
@@ -83,5 +83,19 @@ public class BinaryRepresentationOfN {
             }
         }
         return power;
+    }
+
+
+    //Saim's solution
+    public static int binaryOfN(int n){ // 6 -> 3 -> 1 -> 0
+
+        String binary = ""; // 0 -> 10 -> 110
+
+        while(n > 0){
+            binary = n % 2 + binary;
+            n /= 2;
+        }
+
+        return binary.replace("0", "").length();
     }
 }
