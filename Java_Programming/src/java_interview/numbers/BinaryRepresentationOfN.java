@@ -1,4 +1,4 @@
-package java_interview;
+package java_interview.numbers;
 
 import java.util.ArrayList;
 import java.util.List;

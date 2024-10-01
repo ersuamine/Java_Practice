@@ -1,4 +1,4 @@
-package java_interview;
+package java_interview.array;
 
 public class FindingSecondMax {
     public static void main(String[] args) {

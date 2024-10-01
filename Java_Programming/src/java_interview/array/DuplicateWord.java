@@ -1,21 +1,29 @@
-package java_interview;
+package java_interview.array;
 
 
+import java.util.Arrays;
 import java.util.Objects;
 
 public class DuplicateWord {
+
     public static void main(String[] args) {
         String string = "Big black bug bit a big black dog on his big black nose";
+
         System.out.println(string);
-        int count;
         //Converts the string into lowercase
         string = string.toLowerCase();
+
         //Split the string into words using built-in function
         String words[] = string.split(" ");
+        System.out.println("Arrays.toString(words) = " + Arrays.toString(words));
+        
         System.out.println("Duplicate words in a given string : ");
+
+        int count;
         for (int i = 0; i < words.length; i++) {
             count = 1;
-            for (int j = i + 1; j < words.length; j++) {
+
+            for (int j = i+ 1; j < words.length; j++) {
                 if (words[i].equals(words[j])) {
                     count++;
                     //Set words[j] to 0 to avoid printing visited word
@@ -24,7 +32,7 @@ public class DuplicateWord {
             }
 
             //Displays the duplicate word if count is greater than 1
-            if (count > 1 && !Objects.equals(words[i], "0"))
+            if (count > 1 && !words[i].equals("0"))
                 System.out.println(words[i]);
         }
     }

@@ -1,4 +1,4 @@
-package java_interview;
+package java_interview.numbers;
 
 public class SingleDigit {
     public static void main(String[] args) {
